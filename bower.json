@@ -1,0 +1,26 @@
+{
+  "name": "ng-gc-webhook-list-directive",
+  "version": "0.1.0",
+  "main": "ng-gc-webhook-list-directive.js",
+  "dependencies": {
+    "angular": "~1.2.5",
+    "ng-gc-pagination-nav-directive": "git://github.com/gocardless-ng/ng-gc-pagination-nav-directive.git",
+    "ng-gc-table-directive": "git://github.com/gocardless-ng/ng-gc-table-directive.git",
+    "ng-gc-status-code-directive": "git://github.com/gocardless-ng/ng-gc-status-code-directive.git"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.5",
+    "jasmine-helpers": "git@github.com:gocardless/jasmine-helpers.git"
+  },
+  "ignore": [
+    "**/.*",
+    "*/*spec.js",
+    "circle.yml",
+    "vendor-components.json",
+    "node_modules",
+    "components",
+    "package.json",
+    "Gruntfile.js",
+    "karma.conf.js"
+  ]
+}
