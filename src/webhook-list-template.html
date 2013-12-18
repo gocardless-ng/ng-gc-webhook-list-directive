@@ -18,29 +18,31 @@
   </span>
   <!-- BODY CELL TEMPLATES END -->
 
-  <gc-table
-    table-data="webHooks"
-    table-options="{
-      rowUrl: '/developer/web-hooks/{{ $row.id }}'
-    }"
-    table-columns="[{
-      field: 'created_at',
-      displayAs: 'Created',
-      className: 'created_at'
-    }, {
-      field: 'action',
-      displayAs: 'Action',
-      className: 'action'
-    }, {
-      field: 'resource_type',
-      displayAs: 'Resource Type',
-      className: 'resource_type'
-    }, {
-      field: 'response_code',
-      displayAs: 'Status',
-      className: 'response_code'
-    }]">
-  </gc-table>
+  <div class="u-margin-Bm">
+    <gc-table
+      table-data="webHooks"
+      table-options="{
+        rowUrl: '/developer/web-hooks/{{ $row.id }}'
+      }"
+      table-columns="[{
+        field: 'created_at',
+        displayAs: 'Created',
+        className: 'created_at'
+      }, {
+        field: 'action',
+        displayAs: 'Action',
+        className: 'action'
+      }, {
+        field: 'resource_type',
+        displayAs: 'Resource Type',
+        className: 'resource_type'
+      }, {
+        field: 'response_code',
+        displayAs: 'Status',
+        className: 'response_code'
+      }]">
+    </gc-table>
+  </div>
 
   <pagination-nav meta="webHooks.meta"></pagination-nav>
 </div>
